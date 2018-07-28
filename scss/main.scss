@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.row {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+}
+
+.main {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  background-color: #ebe69c;
+  // height: auto;
+  // min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+
+.logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  // min-height: 120px;
+  // margin-bottom: 1.25em;
+  // padding-top: 1em;
+  height: 20vh;
+  position: relative;
+  // top: 2em;
+}
+
+.logo__img {
+  display: block;
+  height: 5em;
+  width: 5em;
+  // margin-bottom: 0.7em;
+  // margin-top: 0.9em;
+  // transform: scale(0.8);
+}
+
+.logo__text {
+  color: #541210;
+  font-family: 'Lobster', cursive;
+  font-size: 1.4em;
+  margin-left: 1em;
+}
+
+.main__boxes-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.main__boxes {
+  display: flex;
+  justify-content: center;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  position: relative;
+  width: 100%;
+}
+
+.main__box {
+  align-items: center;
+  background-color: #A43A2C;
+  border-radius: 0.5em;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  // height: 8em;
+  height: 43vw;
+  justify-content: center;
+  margin: 0.32em;
+  max-height: 250px;
+  max-width: 250px;
+  // width: 50%;
+  width: 43vw;
+}
+
+.fas {
+  margin-bottom: 3px;
+}
+
+.box__text {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.about {
+  background-color: #00fc8b;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 350px) {
+  .box__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 400px) {
+  .main__box {
+    height: 40vw;
+    margin: 0.8em;
+    width: 40vw;
+  }
+}
+
+@media (min-width: 350px) and (min-height: 600px) {
+  .logo__img {
+    height: 7em;
+    width: 7em;
+  }
+}
+
+
+
+
+
+@media (orientation: landscape) and (min-width: 400px) {
+  .logo__img {
+    height: 3em;
+    width: 3em;
+  }
+
+  .main__box {
+    height: 12vw;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 700px) {
+  .main__box {
+    height: 16vw;
+  }
+}
