@@ -1,7 +1,7 @@
 $(function() {
-  // particlesJS.load('particles-js', 'assets/particles.json', function() {
-  //   console.log('callback - particles.js config loaded');
-  // });
+  particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 
   var $logo = $(".logo");
   var $main_boxes_container = $(".main__boxes-container");
